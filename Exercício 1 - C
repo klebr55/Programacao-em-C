@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    
+    char nome [250]; 
+    char curso [250];
+    char disciplina [250];
+    int sem;
+    
+    printf("Digite seu nome: ");
+    fgets(nome, sizeof(nome), stdin);
+    printf("Digite seu curso: ");
+    fgets(curso, sizeof(curso), stdin);
+    printf("Digite a sua disciplina: ");
+    fgets(disciplina, sizeof(disciplina), stdin);
+    printf("Qual é o seu semestre?: ");
+    scanf("%d", &sem);
+    
+    printf("Olá, %s\n", nome);
+    printf("Seu curso é: %s\n", curso);
+    printf("Sua disciplina é: %s\n", disciplina);
+    printf("Você está no %d° semestre", sem);
+    
+    return 0;
+}
